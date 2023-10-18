@@ -1,0 +1,201 @@
+body {
+    background-color: hsl(0, 0%, 94%);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 680px;
+    height: 500px;
+    background-color: white;
+    border-style: solid;
+    border-color: hsl(0, 0%, 94%);
+    border-width: 1px;
+    border-radius: 20px 20px 150px 20px;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-fields {
+    display: flex;
+    padding: 40px;
+    margin-top: 5px;
+}
+
+.day , .month , .year {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.dayinput , .monthinput , .yearinput {
+    width: 110px;
+    height: 48px;
+    border-style: solid;
+    border-color: hsl(0, 0%, 86%);
+    border-width: 1px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.dayinput:hover , .monthinput:hover , .yearinput:hover{
+    border-style: solid;
+    border-color: hsl(259, 100%, 65%);
+    border-width: 1px;
+}
+.month  {
+    position: relative;
+    left: 25px;
+}
+.year { 
+    position: relative;
+    left: 50px;
+}
+
+.daylabel , .monthlabel , .yearlabel {
+    position: relative;
+    bottom: 7px;
+    font-weight: 400;
+    color: hsl(0, 1%, 44%);
+    font-size: 12px;
+
+}
+
+input[type="text"]::-webkit-input-placeholder {
+    font-size: 24px;
+    font-weight: 700;
+    color: hsl(0, 1%, 44%);
+    position: relative;
+    top: 5px;
+}
+
+.submit-block hr {
+    width: 75%;
+    border-color: hsl(0, 0%, 97%);
+    position: relative;
+    right: 37px;
+}
+
+.circle {
+    background-color: hsl(259, 100%, 65%);
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: none;
+    position: relative;
+    left: 560px;
+    bottom: 40px;
+    cursor: pointer;
+}
+
+.text {
+    width: 400px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    font-size: 34px;
+    font-style: italic;
+    position: relative;
+    top: 10px;
+}
+
+.years {
+    position: relative;
+    bottom: 100px;
+}
+.months {
+    position: relative;
+    bottom: 200px;
+}
+.days{
+    position: relative;
+    bottom: 300px;
+}
+span {
+    color: hsl(259, 100%, 65%);
+}
+#btn {
+    cursor: pointer;
+
+}
+#btn:hover{
+    background-color: black;
+}
+.hide {
+    display: none;
+}
+
+.dayError , .monthError , .yearError {
+    font-size: 10px;
+    position: relative;
+    top: 10px;
+    font-weight: 400;
+    color: red;
+    font-style: italic;
+}
+
+.errorBorder {
+    width: 110px;
+    height: 48px;
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+    border-radius: 7px;
+}
+.errorText {
+    position: relative;
+    bottom: 7px;
+    font-weight: 400;
+    color: red;
+    font-size: 12px;
+
+}
+
+@media screen and (max-width:700px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+    }
+    .card{
+        width: 410px;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        position: relative;
+        bottom: 60px;
+        left: 8.5px;
+    }
+    
+    .day , .month , .year {
+        width: 28%;
+    }
+    .submit-block{
+        position: relative;
+    }
+    .submit-block hr {
+        position: relative;
+        width: 80%;
+        left: 5px;
+
+    }
+    .circle{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .text{
+        margin-top: 5rem;
+    }
+    .text h1{
+        font-size: 3.5rem;
+    }
+}

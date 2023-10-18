@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+    <title>Age Calculator</title>
+</head>
+<body>
+    <div class="card" >
+        <div class="container">
+            <div class="input-fields">
+                <div class="day">
+                    <label for="day" id="daylabel" class="daylabel">D a y</label>
+                    <input type="text" class="dayinput" placeholder="  DD" id="day">
+                    <div class="dayError hide">Must be a valid day</div>
+                </div>
+                <div class="month">
+                    <label for="month" id="monthlabel" class="monthlabel">M o n t h</label>
+                    <input type="text" class="monthinput" placeholder="  MM" id="month">
+                    <div class="monthError hide">Must be a valid day</div>
+                </div>
+                <div class="year">
+                    <label for="year" id="yearlabel" class="yearlabel">Y e a r</label>
+                    <input type="text" class="yearinput" placeholder="  YYYY" id="year">
+                    <div class="yearError hide">Must be a valid day</div>
+                </div>
+            </div>
+            <div class="submit-block">
+                <hr>
+                <button class="circle" type="submit" id="btn">
+                    <img src="icon-arrow.svg" alt="arrow">
+                </button>
+            </div>
+            <div class="text">
+                <div class="years">
+                    <h1> <span id="first">--</span> years</h1>
+                </div>
+                <div class="months">
+                    <h1> <span id="second">--</span> months</h1>
+                </div>
+                <div class="days">
+                    <h1><span id="third">--</span> days</h1>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
